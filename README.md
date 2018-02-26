@@ -1,3 +1,4 @@
+﻿# Анатолий Коробицын и Анастасия Тер-Степанова
 # Java Junior Developer Training Course.
 80 hours training + 16 hours work project = 96 hr.
 
