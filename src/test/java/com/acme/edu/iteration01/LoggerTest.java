@@ -53,7 +53,7 @@ public class LoggerTest implements SysoutCaptureAndAssertionAbility {
         assertSysoutContains("-1");
         //endregion
     }
-    
+
 
     @Test
     public void shouldLogChar() throws IOException {
