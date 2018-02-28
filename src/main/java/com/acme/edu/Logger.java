@@ -1,5 +1,6 @@
 package com.acme.edu;
 
+
 /**
  * Displays message to the console
  */
@@ -9,18 +10,19 @@ public class Logger {
     private static String str = "string: ";
     private static String ref = "reference: ";
     private static String sob = "/n@";
+    private static int count = 0;
+    private static int sum = 0;
+    private static String lastmessage = "";
 
     private static void systemOut(Object s) {
         System.out.println(s);
     }
-    public static void zero() {
 
-    }
 
     public static void log(int message) {
         systemOut(prim + message);
-        message += message - 1;
-        systemOut(message);
+        sum += message;
+        systemOut(sum);
     }
 
 
@@ -34,11 +36,14 @@ public class Logger {
 
     public static void log(String message) {
         systemOut(str + message);
-        int count = 0;
-        if (message.equals(message)) {
+        if (!message.equals(lastmessage) && !lastmessage.equals("")) {
+            count = 1;
+        }
+        else {
             count++;
         }
-        systemOut(message + "(x"+count+")");
+        lastmessage = message;
+        systemOut(message + " (x"+count+")");
     }
 
     public static void log(boolean message) {

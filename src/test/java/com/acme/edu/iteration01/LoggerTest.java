@@ -5,8 +5,8 @@ import com.acme.edu.SysoutCaptureAndAssertionAbility;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.io.*;
+
 
 public class LoggerTest implements SysoutCaptureAndAssertionAbility {
     //region given
