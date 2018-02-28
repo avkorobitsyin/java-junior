@@ -10,13 +10,19 @@ public class Logger {
     private static String ref = "reference: ";
     private static String sob = "/n@";
 
-    private static void systemOut(String s) {
+    private static void systemOut(Object s) {
         System.out.println(s);
+    }
+    public static void zero() {
+
     }
 
     public static void log(int message) {
         systemOut(prim + message);
+        message += message - 1;
+        systemOut(message);
     }
+
 
     public static void log(char message) {
         systemOut(chr + message);
@@ -28,6 +34,11 @@ public class Logger {
 
     public static void log(String message) {
         systemOut(str + message);
+        int count = 0;
+        if (message.equals(message)) {
+            count++;
+        }
+        systemOut(message + "(x"+count+")");
     }
 
     public static void log(boolean message) {
