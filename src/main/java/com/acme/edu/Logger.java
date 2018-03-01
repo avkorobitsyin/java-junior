@@ -1,6 +1,8 @@
 package com.acme.edu;
 
 
+import java.util.Arrays;
+
 /**
  * Displays message to the console
  */
@@ -10,11 +12,16 @@ public class Logger {
     private static String str = "string: ";
     private static String ref = "reference: ";
     private static String sob = "/n@";
+    private static String arr = "primitives array: ";
+    private static String matr = "primitives matrix: {";
     private static int count = 0;
     private static int sum = 0;
     private static String lastmessage = "";
 
     private static void systemOut(Object s) {
+        System.out.println(s);
+    }
+    private static void systemOut(String s) {
         System.out.println(s);
     }
 
@@ -54,4 +61,17 @@ public class Logger {
         systemOut(ref + message + sob + message);
     }
 
+    public static void log(int[] message) {
+        String ss = Arrays.toString(message);
+        String sss = ss.replace('[', '{').replace(']', '}');
+        systemOut(arr + sss);
+    }
+
+    public static void log(int[][] message) {
+        String ss = Arrays.toString(message);
+        String sss = ss.replace('[', '{').replace(']', '}');
+        systemOut(matr);
+        systemOut(sss);
+        systemOut("}");
+    }
 }
