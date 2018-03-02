@@ -50,7 +50,7 @@ public class LoggerTest implements SysoutCaptureAndAssertionAbility {
         assertSysoutContains("}");
         //endregion
     }
-
+    /*
     @Test
     public void shouldLogIntegersMulitidimentionalArray() throws IOException {
         //region when

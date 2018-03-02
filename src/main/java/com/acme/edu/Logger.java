@@ -24,6 +24,9 @@ public class Logger {
     private static void systemOut(String s) {
         System.out.println(s);
     }
+    private static void systemPrint(Object s) {
+        System.out.print(s);
+    }
 
 
     public static void log(int message) {
@@ -68,10 +71,17 @@ public class Logger {
     }
 
     public static void log(int[][] message) {
-        String ss = Arrays.toString(message);
-        String sss = ss.replace('[', '{').replace(']', '}');
         systemOut(matr);
-        systemOut(sss);
+        for (int i = 0; i < message.length ; i++) {
+            systemPrint("{");
+            for (int j = 0; j < message.length ; j++) {
+                systemPrint(message[i][j]);
+                if (j != message.length - 1) {
+                    systemPrint(", ");
+                }
+            }
+            systemOut("}");
+        }
         systemOut("}");
     }
 }
