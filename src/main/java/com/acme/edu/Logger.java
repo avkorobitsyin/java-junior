@@ -1,8 +1,6 @@
 package com.acme.edu;
 
 
-import java.util.Arrays;
-
 /**
  * Displays message to the console
  */
@@ -37,11 +35,11 @@ public class Logger {
         LogArrays.Matrix(message);
     }
     public static void log(int message) {
-        Count.sum(message);
+        CountInt.sum(message);
     }
 
     public static void log(String message) {
-        Count.countMes(message);
+        CountString.countMes(message);
     }
 
 }

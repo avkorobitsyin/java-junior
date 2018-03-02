@@ -1,20 +1,9 @@
 package com.acme.edu;
 
-/**
- * Print sumString and SumInt
- */
-
-public class Count extends Logger {
-    private static int count = 0;
-    private static int sum = 0;
+public class CountString {
     private static String lastmessage = "";
+    private static int count = 0;
     private static String str = "string: ";
-
-    public static void sum(int message) {
-        PrintToConsole.systemOut(prim + message);
-        sum += message;
-        PrintToConsole.systemOut(sum);
-    }
 
     public static void countMes(String message) {
         PrintToConsole.systemOut(str + message);
@@ -27,5 +16,4 @@ public class Count extends Logger {
         lastmessage = message;
         PrintToConsole.systemOut(message + " (x"+count+")");
     }
-
 }
