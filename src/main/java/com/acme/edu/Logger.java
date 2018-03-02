@@ -11,6 +11,7 @@ public class Logger {
     public static final String chr = "char: ";
     public static String ref = "reference: ";
     public static String sob = "/n@";
+    
 
     public static void log(char message) {
         PrintToConsole.systemOut(chr + message);
