@@ -3,7 +3,7 @@ package com.acme.edu;
 /**
  * Print message
  */
-public class PrintToConsole {
+public class Message {
 
     public static void systemOut(Object s) {
         System.out.println(s);

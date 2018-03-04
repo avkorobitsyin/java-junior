@@ -13,21 +13,21 @@ public class LogArrays {
     public static void Array(int[] message) {
         String ss = Arrays.toString(message);
         String sss = ss.replace('[', '{').replace(']', '}');
-        PrintToConsole.systemOut(arr + sss);
+        Message.systemOut(arr + sss);
     }
 
-    public static void Matrix(int[][] message) {
-        PrintToConsole.systemOut(matr);
+    public static void matrix(int[][] message) {
+        Message.systemOut(matr);
         for (int i = 0; i < message.length ; i++) {
-            PrintToConsole.systemPrint("{");
+            Message.systemPrint("{");
             for (int j = 0; j < message.length ; j++) {
-                PrintToConsole.systemPrint(message[i][j]);
+                Message.systemPrint(message[i][j]);
                 if (j != message.length - 1) {
-                    PrintToConsole.systemPrint(", ");
+                    Message.systemPrint(", ");
                 }
             }
-            PrintToConsole.systemOut("}");
+            Message.systemOut("}");
         }
-        PrintToConsole.systemOut("}");
+        Message.systemOut("}");
     }
 }

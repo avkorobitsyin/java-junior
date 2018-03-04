@@ -5,26 +5,26 @@ package com.acme.edu;
  * Displays message to the console
  */
 public class Logger {
-    public static String prim = "primitive: ";
-    public static final String chr = "char: ";
-    public static String ref = "reference: ";
-    public static String sob = "/n@";
+   // public static String prim = "primitive: ";
+   // public static String chr = "char: ";
+   // public static String ref = "reference: ";
+   // public static String sob = "/n@";
 
 
     public static void log(char message) {
-        PrintToConsole.systemOut(chr + message);
+        CharMessage.charMessage(message);
     }
 
     public static void log(byte message) {
-        PrintToConsole.systemOut(prim + message);
+        PrrimitiveMesage.primMesage(message);
     }
 
     public static void log(boolean message) {
-        PrintToConsole.systemOut(prim + message);
+        PrrimitiveMesage.primMessage(message);
     }
 
     public static void log(Object message) {
-        PrintToConsole.systemOut(ref + message + sob + message);
+        ObjectMessage.objMessage(message);
     }
 
     public static void log(int[] message) {
@@ -32,7 +32,7 @@ public class Logger {
     }
 
     public static void log(int[][] message) {
-        LogArrays.Matrix(message);
+        LogArrays.matrix(message);
     }
     public static void log(int message) {
         CountInt.sum(message);
