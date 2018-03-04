@@ -1,7 +1,7 @@
 package com.acme.edu;
 
 /**
- * Created by avkor on 04.03.2018.
+ * print string
  */
 public class StringMessage {
     public static String str = "string: ";

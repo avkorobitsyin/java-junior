@@ -1,5 +1,9 @@
 package com.acme.edu;
 
+/**
+ * Print sum String
+ */
+
 public class CountString {
     public static String lastmessage = "";
     public static int count = 0;

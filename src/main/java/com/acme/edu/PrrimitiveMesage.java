@@ -1,7 +1,7 @@
 package com.acme.edu;
 
 /**
- * Created by avkor on 04.03.2018.
+ * print primitive
  */
 public class PrrimitiveMesage {
     public static String prim = "primitive: ";

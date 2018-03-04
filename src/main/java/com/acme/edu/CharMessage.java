@@ -1,7 +1,7 @@
 package com.acme.edu;
 
 /**
- * Created by avkor on 04.03.2018.
+ * Print char
  */
 public class CharMessage {
     public static String chr = "char: ";

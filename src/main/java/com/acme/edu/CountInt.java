@@ -1,10 +1,10 @@
 package com.acme.edu;
 
 /**
- * Print sumString and SumInt
+ * Print SumInt
  */
 
-public class CountInt extends Logger {
+public class CountInt{
     private static int sum = 0;
 
     public static void sum(int message) {

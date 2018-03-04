@@ -1,7 +1,7 @@
 package com.acme.edu;
 
 /**
- * Created by avkor on 04.03.2018.
+ * print reference
  */
 public class ObjectMessage {
     public static String ref = "reference: ";

@@ -5,11 +5,6 @@ package com.acme.edu;
  * Displays message to the console
  */
 public class Logger {
-   // public static String prim = "primitive: ";
-   // public static String chr = "char: ";
-   // public static String ref = "reference: ";
-   // public static String sob = "/n@";
-
 
     public static void log(char message) {
         CharMessage.charMessage(message);
