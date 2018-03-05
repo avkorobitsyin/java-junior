@@ -1,12 +1,14 @@
 package com.acme.edu;
 
 /**
- * Print char
+ * Вывод символов
  */
-public class CharMessage {
-    public static String chr = "char: ";
+public class CharMessage implements Message {
+    private static String chr = "char: ";
 
-    public static void charMessage(char message) {
-        Message.systemOut(chr + message);
+    @Override
+    public void printMessage(Object o) {
+        Printer p = new ConsolePrinter();
+        p.systemOut(chr + o);
     }
 }

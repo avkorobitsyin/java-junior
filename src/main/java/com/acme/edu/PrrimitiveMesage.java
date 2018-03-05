@@ -1,18 +1,14 @@
 package com.acme.edu;
 
 /**
- * print primitive
+ * Вывод сообщения для byte и boolean
  */
-public class PrrimitiveMesage {
-    public static String prim = "primitive: ";
+public class PrrimitiveMesage implements Message {
+    private static String prim = "primitive: ";
 
-    public static void primMesage(byte message) {
-        Message.systemOut(prim + message);
-    }
-    public static void primMessage(boolean message) {
-        Message.systemOut(prim+message);
-    }
-    public static void primMessage(int message) {
-        Message.systemOut(prim+message);
+    @Override
+    public void printMessage(Object o) {
+        Printer p = new ConsolePrinter();
+        p.systemOut(prim + o);
     }
 }

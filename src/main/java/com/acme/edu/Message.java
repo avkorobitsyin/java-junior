@@ -1,19 +1,9 @@
 package com.acme.edu;
 
 /**
- * Print message
+ * Интерфейс для вывода сообщений разных типов
  */
-public class Message {
+public interface Message {
+    void printMessage(Object o);
 
-    public static void systemOut(Object s) {
-        System.out.println(s);
-    }
-
-    public static void systemOut(String s) {
-        System.out.println(s);
-    }
-
-    public static void systemPrint(Object s) {
-        System.out.print(s);
-    }
 }

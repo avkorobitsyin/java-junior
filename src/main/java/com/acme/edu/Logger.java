@@ -7,34 +7,43 @@ package com.acme.edu;
 public class Logger {
 
     public static void log(char message) {
-        CharMessage.charMessage(message);
+        Message m = new CharMessage();
+        m.printMessage(message);
     }
 
     public static void log(byte message) {
-        PrrimitiveMesage.primMesage(message);
+        Message m = new PrrimitiveMesage();
+        m.printMessage(message);
     }
 
     public static void log(boolean message) {
-        PrrimitiveMesage.primMessage(message);
+        Message m = new PrrimitiveMesage();
+        m.printMessage(message);
     }
 
     public static void log(Object message) {
-        ObjectMessage.objMessage(message);
+        Message m = new ObjectMessage();
+        m.printMessage(message);
     }
 
     public static void log(int[] message) {
-        LogArrays.Array(message);
+        Message m = new ArraysMesage();
+        m.printMessage(message);
     }
 
     public static void log(int[][] message) {
-        LogArrays.matrix(message);
+        Message m = new MatrixMesage();
+        m.printMessage(message);
     }
+
     public static void log(int message) {
-        CountInt.sum(message);
+        Message m = new IntAccumulatedMessage();
+        m.printMessage(message);
     }
 
     public static void log(String message) {
-        CountString.countMes(message);
+        Message m = new StringAccumulatedMessage();
+        m.printMessage(message);
     }
 
 }

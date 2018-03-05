@@ -1,13 +1,15 @@
 package com.acme.edu;
 
 /**
- * print reference
+ * Вывод ссылки на объект
  */
-public class ObjectMessage {
-    public static String ref = "reference: ";
-    public static String sob = "/n@";
+public class ObjectMessage implements Message {
+    private static String ref = "reference: ";
+    private static String sob = "/n@";
 
-    public static void objMessage(Object message) {
-        Message.systemOut(ref + message + sob + message);
+    @Override
+    public void printMessage(Object o) {
+        Printer p = new ConsolePrinter();
+        p.systemOut(ref + o + sob + o);
     }
 }
