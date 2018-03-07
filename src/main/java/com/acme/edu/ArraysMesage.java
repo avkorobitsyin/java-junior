@@ -11,9 +11,13 @@ public class ArraysMesage implements Message {
 
     @Override
     public void printMessage(Object o) {
-        String ss = Arrays.toString((int[]) o);
-        String sss = ss.replace('[', '{').replace(']', '}');
-        Printer p = new ConsolePrinter();
-        p.systemOut(arr + sss);
+        if (o instanceof int[]) {
+            String ss = Arrays.toString((int[]) o);
+            String sss = ss.replace('[', '{').replace(']', '}');
+            Printer p = new ConsolePrinter();
+            p.systemOut(arr + sss);
+        } else {
+            System.out.println("Ошибка");
+        }
     }
 }

@@ -1,9 +1,6 @@
 package com.acme.edu;
 
-/**
- * Вывод сообщения для byte и boolean
- */
-public class PrrimitiveMesage implements Message {
+public class ByteMessage implements Message {
     private static String prim = "primitive: ";
 
     @Override

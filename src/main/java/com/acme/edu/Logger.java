@@ -12,13 +12,13 @@ public class Logger {
     }
 
     public static void log(byte message) {
-        Message m = new PrrimitiveMesage();
-        m.printMessage(message);
+        Message m = new ByteMessage();
+        m.accept(message);
     }
 
     public static void log(boolean message) {
-        Message m = new PrrimitiveMesage();
-        m.printMessage(message);
+        Message mes = new  BooleanMessage();
+        mes.accept(message);
     }
 
     public static void log(Object message) {
