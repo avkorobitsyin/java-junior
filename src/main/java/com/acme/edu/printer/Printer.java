@@ -1,4 +1,4 @@
-package com.acme.edu;
+package com.acme.edu.printer;
 
 /**
  * Интерфейс для вывода сообщения куда-либо.

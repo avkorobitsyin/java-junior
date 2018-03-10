@@ -1,4 +1,6 @@
-package com.acme.edu;
+package com.acme.edu.formater;
+
+import com.acme.edu.message.*;
 
 public interface FormatVisitor {
     String formatIntMessage(IntAccumulatedMessage message);

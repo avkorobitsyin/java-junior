@@ -1,4 +1,6 @@
-package com.acme.edu;
+package com.acme.edu.formater;
+
+import com.acme.edu.message.*;
 
 public class PrefixFormatVisitor implements FormatVisitor {
     @Override
@@ -23,7 +25,7 @@ public class PrefixFormatVisitor implements FormatVisitor {
 
     @Override
     public String formatMatrixMessage(MatrixMesage message) {
-        return "primitives matrix: {" + message;
+        return "primitives matrix: " + message;
     }
 
     @Override

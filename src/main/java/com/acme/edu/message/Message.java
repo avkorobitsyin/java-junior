@@ -1,10 +1,10 @@
-package com.acme.edu;
+package com.acme.edu.message;
+
+import com.acme.edu.formater.FormatVisitor;
 
 /**
  * Интерфейс для вывода сообщений разных типов
  */
 public interface Message {
-    //void printMessage(Object o);
-    String accept(PrefixFormatVisitor formatVisitor);
-
+    String accept(FormatVisitor formatVisitor);
 }
