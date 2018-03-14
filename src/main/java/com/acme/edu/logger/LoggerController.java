@@ -12,17 +12,17 @@ import java.util.ArrayList;
 /**
  * Контроль за аккумулированием сообщений и их выводом
  */
-class LoggerController {
+public class LoggerController {
     private ArrayList<Message> messageList = new ArrayList<>();
     private final Printer printer;
     private FormatVisitor formatVisitor;
 
-    LoggerController(Printer printer, FormatVisitor visitor) {
+    public LoggerController(Printer printer, FormatVisitor visitor) {
         this.printer = printer;
         this.formatVisitor = visitor;
     }
 
-    void loggerMessage(Message message) {
+    public void loggerMessage(Message message) {
         if (!messageList.isEmpty() &&
                 messageList.get(messageList.size() - 1).getClass().
                         equals(message.getClass())
@@ -61,7 +61,7 @@ class LoggerController {
         }
     }
 
-    void flush() {
+    public void flush() {
         for (Message m : messageList) {
             printer.systemOut(m.accept(formatVisitor));
         }
