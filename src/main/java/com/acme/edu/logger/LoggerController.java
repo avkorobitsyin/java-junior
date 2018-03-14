@@ -26,7 +26,7 @@ class LoggerController {
         if (!messageList.isEmpty() &&
                 messageList.get(messageList.size() - 1).getClass().
                         equals(message.getClass())
-                && message instanceof AccumulatedMesage) {
+                        && message instanceof AccumulatedMesage) {
             if (message instanceof StringAccumulatedMessage) {
                 AccumulatedMesage last = (AccumulatedMesage) messageList.get(messageList.size() - 1);
                 if (last.isNeedToAccumulate((AccumulatedMesage) message)) {

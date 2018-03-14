@@ -4,12 +4,13 @@ package com.acme.edu.logger;
 import com.acme.edu.formater.PrefixFormatVisitor;
 import com.acme.edu.message.*;
 import com.acme.edu.printer.ConsolePrinter;
+import com.acme.edu.printer.Printer;
 
 /**
  * Displays message to the console
  */
 public class Logger {
-    private static LoggerController loggerController = new LoggerController(new ConsolePrinter(),
+    private static LoggerController loggerController = new LoggerController(System.out::println,
             new PrefixFormatVisitor());
     public static void flush() {
         loggerController.flush();
